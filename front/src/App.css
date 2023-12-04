@@ -1,0 +1,331 @@
+:root{
+  --color-1:#007ED2;
+  --color-2:#070520;
+  --color-3:#010035;
+  --color-4:#04BA00;
+  --text-color:#ffff;
+  --body-color:#ffff;
+}
+
+/* !========================================= Header =========================================== */
+.post__navbar{
+  background-color: var(--color-3);
+  height: 20px;
+  width: 100%;
+}
+
+.navbar__conatiner{
+  width: 100%;
+}
+
+.navbar__conatiner nav{
+  background-color: var(--color-1);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__ul a{
+  display: flex;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.navbar__ul{
+  font-weight: 500;
+  font-size: 1.7rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: var(--text-color);
+}
+
+.navbar__link__user{
+  font-size: 3rem;
+}
+/* !========================================= Fin Header =========================================== */
+
+/* !========================================= Hero =========================================== */
+.hero__container{
+ 
+  height: 86vh;
+  display: flex;
+  justify-content: space-between;
+  background-image: url(assets/hero.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero__text__info{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  padding: 30px;
+}
+
+.hero__text__info h1{
+  font-size: 5rem;
+}
+
+.hero__text__info h1{
+  font-size: 5rem;
+}
+
+.hero__text__info h1 strong{
+ color: var(--color-1);
+}
+
+.hero__text__info h3 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.hero__btn__box{
+  display: flex;
+  gap: 20px;
+ 
+}
+
+.hero__btn {
+  padding: 10px;
+  font-weight: 300;
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  border-radius: 7px;
+  font-size: 2rem;
+}
+
+.hero__btn:first-child{
+  background-color: var(--color-4);
+}
+
+.hero__image{
+  position: relative;
+  min-width: 500px;
+  overflow: hidden;
+}
+
+.hero__image img{
+  width: 600px;
+  position: absolute;
+  right: -100px;
+  bottom: -100px;
+}
+.hero__ola{
+  position: absolute;
+  width: 100%;
+  bottom: -7px;
+}
+/* !========================================= Fin Hero =========================================== */
+
+/* !========================================= Secction About =========================================== */
+
+.section__about__container{
+  position: relative;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.section__about__container h2 {
+  font-size: 4rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+.section__about__container h2 strong{
+  color: var(--color-1);
+}
+.about__card__container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px;
+}
+.about__card{
+ max-width: 300px;
+ border: 1px solid var(--color-1);
+ border-top: 7px solid  var(--color-1);
+ border-bottom: 7px solid var(--color-1);
+ border-radius: 10px;
+ padding: 20px;
+ box-shadow: 0 0 15px rgb(0 0 0 / 30%);
+ transition: all .1s ease-in-out;
+}
+.about__card:hover{
+  transform: scale(1.02);
+  box-shadow: 0 0 19px rgb(0 0 0 / 35%);
+}
+.about__card__img{
+  display: flex;
+  justify-content: center;
+}
+.about__card h4{
+  margin-top: -20px;
+  margin-bottom: 5px;
+  font-size: 3rem;
+  text-align: center;
+}
+.about__card p{
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+}
+.about__card__btn{
+  display: flex;
+  justify-content: center;
+}
+.about__btn{
+  padding: 20px;
+  font-size: 2rem;
+  text-decoration: none;
+  background-color: var(--color-4);
+  color: white;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+/* !========================================= Fin Secction About =========================================== */
+
+/* !=========================================  Secction Info =========================================== */
+
+.section__info__container{
+  position: relative;
+  width: 100%;
+  margin-top: 40px;
+background-color: var(--color-1);
+}
+.info__vector1{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  user-select: none;
+}
+.info__vector2{
+  transform: rotateX(180deg);
+  width: 100%;
+  position: absolute;
+  bottom:0;
+  left: 0;
+  right: 0;
+  user-select: none;
+}
+.info__vector3{
+  user-select: none;
+  width: 600px;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  z-index: 3;
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(-50%,0);
+    
+  }
+  50% {
+    transform: translate(-50%,-10px);
+   
+  }
+  100% {
+    transform: translate(-50%,0);
+    
+  }
+}
+.info__box{ 
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 400px 30px;
+  padding-top: 400px;
+}
+.info__box h2 {
+  text-align: center;
+  color: white;
+  font-size: 4rem;
+}
+.info__box h2 strong{
+  font-weight: 900;
+  color: var(--color-3);
+}
+.info__box p {
+  font-size: 2rem;
+  color: white;
+}
+.info_card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid white;
+  border-bottom: 5px solid white;
+  border-top: 5px solid white;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 0 15px rgb(0 0 0 / 70%);
+}
+
+.info_card img{
+  object-fit: cover;
+  border-radius: 20px;
+
+}
+.info__card--img img{
+  width: 640px;
+  border: 2px solid white;
+}
+.reverse{
+  flex-direction: row-reverse;
+}
+
+/* !========================================= Fin Secction info =========================================== */
+
+
+/* !========================================= Responsive =========================================== */
+
+
+@media (max-width: 1200px) {
+  .hero__text__info{
+    align-items: center;
+    text-align: center;
+  }
+  .hero__image{
+    display: none;
+  }
+  .hero__ola{
+    bottom: -7px;
+  }
+  .info__card--img img{
+    width: 500px;
+  }
+  .info__box{
+    padding: 300px 30px 170px;
+  }
+}
+@media (max-width: 950px){
+  .info__card--img img{
+    width: 400px;
+  }
+  .info_card{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .info__vector3{
+    width: 400px;
+  }
+}
+
+@media (max-width: 618px){
+  .hero__ola{
+    bottom: -25px;
+  }
+}
